@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 RUN apt-get update
 RUN apt-get install maven tomcat9 git default-jdk -y
-EXPOSE 80
+EXPOSE 8080
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello
 RUN cd boxfuse-sample-java-war-hello
 RUN mvn package
